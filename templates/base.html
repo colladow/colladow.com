@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Wilson Collado</title>
+
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+        {% block stylesheets %}{% endblock %}
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="navbar navbar-inverse">
+                <nav class="navbar-inner">
+                    <a class="brand" href="/">Wilson Collado</a>
+                    <ul class="nav">
+                        <li><a href="http://www.twitter.com/colladow">Twitter</a></li>
+                        <li><a href="http://www.github.com/colladow">Github</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            {% block content %}{% endblock %}
+        </div>
+
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    </body>
+</html>

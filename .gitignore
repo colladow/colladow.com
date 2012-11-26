@@ -1,1 +1,3 @@
 colladow/settings.py
+*.swp
+*.pyc

@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block stylesheets %}
+<link href="{% static 'css/resume.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<h1>Resume</h1>
+
+<section>
+<h3>Work Experience</h3>
+
+<div class="job-info">
+    <p class="dates pull-right">
+        <strong>December 2011 - present</strong>
+    </p>
+    <p class="name">
+        <strong>thredUP,</strong>
+        San Francisco, CA
+    </p>
+    <p class="title">
+        <em>Ruby on Rails Developer and Front-end Engineer</em>
+    </p>
+    <p class="description">
+        Responsible for a Ruby on Rails online storefront for used kids clothing.
+    </p>
+    <div class="contributions">
+        <p>Personal contributions include:</p>
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+</div>
+
+<div class="job-info">
+    <p class="dates pull-right">
+        <strong>May 2010 - May 2011</strong>
+    </p>
+    <p class="name">
+        <strong>Arc90,</strong>
+        New York, NY
+    </p>
+    <p class="title">
+        <em>Software Engineer</em>
+    </p>
+    <p class="description">
+        Responsible for a Python web application that powers a search engine used by engineers to find technical information.
+    </p>
+    <div class="contributions">
+        <p>Personal contributions include:</p>
+        <ul>
+            <li>Participated in designing and rebuilding the entire website on an entirely new platform.</li>
+            <li>Implemented much of the Python code used to wrap the Bottle web framework to fit our needs.</li>
+            <li>Developed all the model mappings using SQLAlchemy to simplify and abstract data access.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="job-info">
+    <p class="dates pull-right">
+        <strong>July 2009 - May 2010</strong>
+    </p>
+    <p class="name">
+        <strong>FactSet Research Systems,</strong>
+        New York, NY
+    </p>
+    <p class="title">
+        <em>Software Engineer</em>
+    </p>
+    <p class="description">
+        Responsible for a ColdFusion web application that manages an entitlement process for financial companies to share research through FactSet’s main application, as well as tracking readership records for that research.
+    </p>
+    <div class="contributions">
+        <p>Personal contributions include:</p>
+        <ul>
+            <li>Introduced the MooTools JavaScript framework to provide more Web 2.0 functionality, such as AJAX and auto-suggest searches. Upgraded the web application to be fully UTF-8 compliant by updating the Perl code’s database connection method.</li>
+            <li>Wrote a configurable data access layer to manage clusters of mirrored MySQL databases.</li>
+            <li>Migrated the readership data from MySQL to MongoDB to reduce the load on MySQL and improve readership report.</li>
+            <li>performance, using a Python web service to query MongoDB.</li>
+            <li>Developed new JavaScript libraries to reduce redundancy in the code base.</li>
+        </ul>
+    </div>
+</div>
+
+</section>
+
+<section>
+<h3>Education</h3>
+
+<div class="school-info">
+    <p class="dates pull-right">
+        <strong>2005 - 2009</strong>
+    </p>
+    <p class="name">
+        <strong>Polytechnic Institute of New York University,</strong>
+        Brooklyn, NY
+    </p>
+    <p class="degree">
+        Bachelor of Science in Computer Science
+    </p>
+    <ul class="unstyled">
+        <li>Cumulative GPA: 3.212</li>
+        <li>Major GPA: 3.462</li>
+    </ul>
+</div>
+</section>
+
+<section>
+<h3>Activities</h3>
+
+<dl>
+    <dt>Lambda Chi Alpha Fraternity</dt>
+    <dd>Managed the chapter and handled its administration as President. Planned, organized and ran recruitment events, as well as kept track of all prospective members as Recruitment Chairman.</dd>
+</dl>
+</section>
+
+<section>
+<h3>Additional Information</h3>
+
+<dl>
+    <dt>Computer Skills</dt>
+    <dd>
+        <ul>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Git</li>
+            <li>SQL</li>
+            <li>*NIX</li>
+            <li>node</li>
+            <li>Ruby</li>
+            <li>Ruby on Rails</li>
+            <li>C/C++</li>
+            <li>Perl</li>
+            <li>ColdFusion</li>
+            <li>CSS</li>
+            <li>SVN</li>
+            <li>Perforce</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>PostgreSQL</li>
+        </ul>
+    </dd>
+
+    <dt>Language Skills</dt>
+    <dd>Fluent in Spanish.</dd>
+</dl>
+</section>
+{% endblock %}
