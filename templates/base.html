@@ -5,7 +5,7 @@
     <head>
         <title>Wilson Collado</title>
 
-        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         {% block stylesheets %}{% endblock %}
         <link href="{% static 'css/print.css' %}" rel="stylesheet" media="print">
     </head>
@@ -16,8 +16,9 @@
                 <nav class="navbar-inner">
                     <a class="brand" href="/">Wilson Collado</a>
                     <ul class="nav">
-                        <li><a href="http://www.twitter.com/colladow">Twitter</a></li>
-                        <li><a href="http://www.github.com/colladow">Github</a></li>
+                        <li><a href="mailto:colladow@gmail.com" title="colladow@gmail.com">E-mail</a></li>
+                        <li><a href="http://www.twitter.com/colladow" title="@colladow">Twitter</a></li>
+                        <li><a href="http://www.github.com/colladow" title="colladow">Github</a></li>
                     </ul>
                     <a href="http://djangopony.com/" class="ponybadge pull-right" title="Magic! Ponies! Django! Whee!"><img src="http://media.djangopony.com/img/small/badge.png" width="120" alt="pony powered"></a>
                 </nav>
@@ -26,6 +27,13 @@
             {% block content %}{% endblock %}
         </div>
 
-        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+
+        <script>
+          $(function(){
+            $('.nav li a').tooltip({ placement: 'bottom' });
+          });
+        </script>
     </body>
 </html>
