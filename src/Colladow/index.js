@@ -12,17 +12,18 @@ const theme = {
 };
 
 const Container = styled.div`
-  padding: ${props => props.theme.margin * 2}px;
+  padding: ${props => props.theme.margin * 4}px;
   box-sizing: border-box;
   max-width: 1440px;
   margin: auto;
+  padding-top: 0;
 `;
 
 const Colladow = () => (
   <ThemeProvider theme={theme}>
-    <Container>
-      <Header />
+    <Header />
 
+    <Container>
       <Heading>Resume</Heading>
       <Name>Wilson Collado</Name>
 
