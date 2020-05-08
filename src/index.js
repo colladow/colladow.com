@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 
 import Colladow from './Colladow';
 
-const root = document.createElement('div');
+const root = document.querySelector('#root');
 
 ReactDOM.render(<Colladow />, root);
-
-document.body.appendChild(root);
