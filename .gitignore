@@ -3,4 +3,3 @@ colladow/settings.py
 *.pyc
 static/*
 node_modules/
-dist/
