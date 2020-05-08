@@ -2,3 +2,5 @@ colladow/settings.py
 *.swp
 *.pyc
 static/*
+node_modules/
+dist/

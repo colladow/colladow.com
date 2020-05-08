@@ -1,0 +1,43 @@
+{
+  "name": "colladow.com",
+  "version": "1.0.0",
+  "description": "My website.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --config webpack.dev.config.js",
+    "start": "npm run dev",
+    "build": "webpack --config webpack.prod.config.js",
+    "clean": "rm -rf dist/",
+    "clean:all": "npm run clean && rm -rf node_modules/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colladow/colladow.com.git"
+  },
+  "author": "Wilson Collado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colladow/colladow.com/issues"
+  },
+  "homepage": "https://github.com/colladow/colladow.com#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-styled-components": "^1.10.7",
+    "html-webpack-plugin": "^4.3.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.0"
+  }
+}
