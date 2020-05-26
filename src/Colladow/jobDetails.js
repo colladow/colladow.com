@@ -13,8 +13,7 @@ const jobDetails = [
       'Created a small package of reusable Styled Components for use in two separate services.',
       'Coordinated frontend changes to authentication screens for the mobile teams.',
       'Implemented social login flows and two-factor authentication.',
-      'Built several features for the Domain Management System including settings and DNS config.',
-      'Wrote the sliding menu system used in the Squarespace 7 product launch.',
+      'Built several features for the Domain Management System including settings and DNS configuration.',
     ],
   },
 

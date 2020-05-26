@@ -10,6 +10,12 @@ const Container = styled.header`
   @media print {
     display: none;
   }
+
+  @media screen and (max-width: 600px) {
+    padding: ${props => props.theme.margin * 2}px ${props => props.theme.margin}px;
+    flex-direction: column;
+    align-items: start;
+  }
 `;
 
 const Link = styled.a`
@@ -22,12 +28,20 @@ const Link = styled.a`
   &:hover, &:active {
     color: #e6e6e6;
   }
+
+  @media screen and (max-width: 600px) {
+    margin: ${props => props.theme.margin * 2}px 0 0 ${props => props.theme.margin}px;
+  }
 `;
 
 const Brand = styled(Link)`
   font-size: 32px;
   color: #fff;
   margin: 0;
+
+  @media screen and (max-width: 600px) {
+    font-size: 24px;
+  }
 `;
 
 const Header = () => (
@@ -46,6 +60,20 @@ const Header = () => (
       title="colladow"
     >
       Github
+    </Link>
+
+    <Link
+      href="./wilson-collado-resume.pdf"
+      title="Resume"
+    >
+      Download PDF
+    </Link>
+
+    <Link
+      href="https://colladow.github.io/flipped-off"
+      title="Flipped Off"
+    >
+      Flipped Off
     </Link>
   </Container>
 );
